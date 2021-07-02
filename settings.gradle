@@ -1,0 +1,2 @@
+rootProject.name = "JaCoCOExample"
+include ':app'
