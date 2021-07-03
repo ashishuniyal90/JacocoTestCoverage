@@ -1,2 +1,3 @@
 rootProject.name = "JaCoCOExample"
 include ':app'
+include ':data'

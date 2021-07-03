@@ -87,13 +87,21 @@ def setupAndroidReporting() {
 
                 reports {
                     csv.enabled false // change if needed
-                    xml.enabled true // change if needed
+                    xml.enabled false // change if needed
                     html {
                         enabled true
                         destination file("${buildDir}/coverage-report")
                     }
                 }
             }
+        }
+    }
+}
+
+android {
+    buildTypes {
+        debug {
+            testCoverageEnabled true
         }
     }
 }
